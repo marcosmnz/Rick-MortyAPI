@@ -82,7 +82,7 @@ window.addEventListener('DOMContentLoaded', () => {
 
     data.forEach((character, i) => {
       let div = createElem('div', ['col']);
-      let card = createElem('div', ['card', 'shadow', 'p-3', 'mb-5', 'bg-body', 'rounded']);
+      let card = createElem('div', ['card', 'shadow', 'p-3', 'mb-5', 'bg-body', 'rounded', 'card-API']);
       card.setAttribute('aria-hidden', true);
       let placeholder = createElem('div', ['placeholder-img']);
       let img = createElem('img', ['card-img-top', 'loading']);
