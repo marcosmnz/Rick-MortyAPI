@@ -17,6 +17,8 @@ window.addEventListener('DOMContentLoaded', () => {
   const txtOrigin = document.getElementById('txtOrigin');
   const txtLocation = document.getElementById('txtLocation');
 
+  const pagination = document.getElementById('pagination');
+
   const modalhandle = async (e) => {
     const id = e.target.dataset.id;
     try {
@@ -107,7 +109,7 @@ window.addEventListener('DOMContentLoaded', () => {
     //LazyLoading
     const lazyLoading = new LazyLoadIMG();
     lazyLoading.init();
-
+    pagination.removeAttribute('hidden');
   };
 
   init();
